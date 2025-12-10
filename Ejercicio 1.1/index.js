@@ -23,4 +23,22 @@ const randomNumber = () => Math.round(Math.random() * 100);
 console.log(randomNumber());
 
 
+// -------------Ejercicio 3----------------
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet = () => {
+    return `Hola, ${this.name}`;
+  };
+}
+
+const person1 = new Person("Chet Baker");
+
+console.log(person1.greet());
+
+
+
 
