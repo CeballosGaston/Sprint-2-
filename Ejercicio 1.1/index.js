@@ -54,4 +54,12 @@ const newArrey = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 printNumbers(newArrey);
 
+//================NIVEL 3 =================
+
+// -------------Ejercicio 5----------------
+
+setTimeout(() => console.log("He esperado 3 segundos"), 3000);
+
+
+
 
