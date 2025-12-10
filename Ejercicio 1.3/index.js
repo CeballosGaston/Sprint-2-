@@ -19,3 +19,21 @@ function calculadora(a, b, callback) {
 const sumar = (a, b) => a + b;
 
 calculadora(23, 23, sumar);
+
+
+//================NIVEL 2 =================
+
+// -------------Ejercicio 3-----------------
+
+function esperarSaludar(nom, callback) {
+  setTimeout(() => {
+    callback(nom);
+  }, 2000);
+}
+//(La pongo a prueba)
+
+function imprimir(n) {
+  console.log(n);
+}
+
+esperarSaludar("Sauron", imprimir);
