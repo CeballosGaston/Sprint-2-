@@ -46,3 +46,20 @@ function trobarMaxim(a, b, c) {
     ? console.log(`El número ${c} es el mayor`)
     : console.log(`Los número son iguales`);
 }
+
+
+//================NIVEL 3 =================
+
+// -------------Ejercicio 4-----------------
+
+function parOImpar(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] % 2 == 0
+      ? console.log(`El número ${arr[i]} es par`)
+      : console.log(`El número ${arr[i]} es impar`);
+  }
+}
+
+const newArr = [1, 2, 3, 4, 56, 776, 8, 9, 54];
+
+parOImpar(newArr);
