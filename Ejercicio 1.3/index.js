@@ -60,3 +60,19 @@ processarElements(newArr, parOImpar);
 
 //================NIVEL 3=================
 
+// -------------Ejercicio 5----------------
+
+function processarCadena (str, callback){
+
+ str = str.toUpperCase(),
+ callback(str);
+
+}
+
+//(La pongo a prueba)
+
+function imprimirStr (str){
+console.log(str);
+}
+
+processarCadena("los enanos de blancanieves", imprimirStr);
