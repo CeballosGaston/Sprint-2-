@@ -17,8 +17,10 @@ const newResult = addArrow(4, 5);
 
 console.log(newResult);
 
+// -------------Ejercicio 2----------------
 
-
+const randomNumber = () => Math.round(Math.random() * 100);
+console.log(randomNumber());
 
 
 
