@@ -40,5 +40,18 @@ const person1 = new Person("Chet Baker");
 console.log(person1.greet());
 
 
+//================NIVEL 2 =================
+
+// -------------Ejercicio 4----------------
+
+function printNumbers(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    (() => console.log(arr[i]))();
+  }
+}
+
+const newArrey = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+printNumbers(newArrey);
 
 
