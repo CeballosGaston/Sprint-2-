@@ -37,3 +37,24 @@ function imprimir(n) {
 }
 
 esperarSaludar("Sauron", imprimir);
+
+
+// -------------Ejercicio 4-----------------
+
+function processarElements(arr, callback) {
+  for (let i = 0; i < arr.length; i++) {
+    callback(arr[i]);
+  }
+}
+
+//(La pongo a prueba)
+function parOImpar(n) {
+  n % 2 == 0
+    ? console.log(`El número ${n} es par`)
+    : console.log(`El número ${n} es impar`);
+}
+
+const newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15];
+
+processarElements(newArr, parOImpar);
+
