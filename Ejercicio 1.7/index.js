@@ -59,3 +59,34 @@ async function imprimirPromesa() {
 }
 
 imprimirPromesa();
+
+
+//================NIVEL 3 =================
+
+// -------------Ejercicio 6-----------------
+
+const promesa2 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Ella Fitzgerald");
+  }, 2000);
+});
+const promesa3 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Billie Holiday");
+  }, 3000);
+});
+
+Promise.all([promesa2, promesa3]).then((resultados) => console.log(resultados));
+
+// PRUEBA CON TODO JUNTO
+
+async function gestionarPromesas() {
+  try {
+    const resultados = await Promise.all([promesa2, promesa3]);
+    console.log("Resultados:", resultados);
+  } catch (error) {
+    console.log("Alguna promesa falló:", error.message);
+  }
+}
+
+gestionarPromesas();
