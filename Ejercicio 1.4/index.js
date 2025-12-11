@@ -24,3 +24,20 @@ function suma(...numeros) {
 const array4 = [3, 4, 5, 6, 76, 45];
 console.log(suma(1, 2, 3, 4, 5, 6));
 console.log(suma(...array4));
+
+//================NIVEL 2 =================
+
+// -------------Ejercicio 3-----------------
+
+const object1 = {
+  name: "Jimi",
+  lastName: "Hendrix",
+  song: "Voodo Child",
+};
+
+const object2 = { ...object1, song: "Purple Haze" };
+
+//COmprobación
+
+console.log(object1);
+console.log(object2);
