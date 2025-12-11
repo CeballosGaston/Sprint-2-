@@ -15,3 +15,10 @@ console.log(cuadrados);
 
 const pares = arrayNumeros.filter((x) => x % 2 == 0);
 console.log(pares);
+
+
+// -------------Ejercicio 3-----------------
+
+const arrayNumeros2 = [1, 10, 8, 11];
+const mayorADiez = arrayNumeros2.find((x) => x > 10);
+console.log(mayorADiez);
