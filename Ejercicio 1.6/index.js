@@ -17,3 +17,11 @@ nombres.forEach((n) => {
 for (const nom of nombres) {
   console.log(nom);
 }
+
+// -------------Ejercicio 3-----------------
+
+const numeros = [1, 2, 3, 4, 5, 6];
+
+const pares = numeros.filter((x) => x % 2 == 0);
+console.log(pares);
+
