@@ -43,3 +43,19 @@ async function imprimirPromesa() {
 }
 
 imprimirPromesa();
+
+
+//================NIVEL 2 =================
+
+// -------------Ejercicio 5-----------------
+
+async function imprimirPromesa() {
+  try {
+    const impresion = await promesa;
+    console.log(impresion);
+  } catch (err) {
+    console.log(err.message);
+  }
+}
+
+imprimirPromesa();
