@@ -8,9 +8,16 @@
 
 const nombres = ["Anna", "Bernat", "Clara"];
 
-nombres.forEach((n) => {
-  console.log(n);
-});
+
+try {
+
+  nombres.forEach((n) => {
+    if(!n) throw new Error("Nombre Vacío")
+    console.log(n);
+  });
+}catch(error){
+console.log("Ha ocurrido un error:", error.message);
+}
 
 // -------------Ejercicio 2-----------------
 
@@ -30,10 +37,15 @@ console.log(pares);
 // -------------Ejercicio 4-----------------
 
 let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
-
+try{
 for (const key in obj) {
-  console.log(key, obj[key]);
+  if(obj[key] === undefined) throw new Error("Valor Indefinido")
+    console.log(key, obj[key]);
+  }
+}catch(error){
+  console.log("Nuevo error:", error.message );
 }
+
 
 
 // -------------Ejercicio 5-----------------
