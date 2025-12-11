@@ -60,3 +60,17 @@ function sumar(a, b, c) {
 const array6 = [40, 50, 60];
 
 console.log(sumar(...array6));
+
+// -------------Ejercicio 6-----------------
+
+const clapton1 = {
+  instrumento: "guitarra",
+  song: "cocaine",
+};
+const clapton2 = {
+  country: "England",
+  age: 80,
+};
+
+const clapton = { ...clapton1, ...clapton2 };
+console.log(clapton);
