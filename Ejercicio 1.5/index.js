@@ -22,3 +22,11 @@ console.log(pares);
 const arrayNumeros2 = [1, 10, 8, 11];
 const mayorADiez = arrayNumeros2.find((x) => x > 10);
 console.log(mayorADiez);
+
+
+// -------------Ejercicio 4-----------------
+
+const arrayNumeros3 = [13, 7, 8, 21];
+const sumaTotal = arrayNumeros3.reduce((acc, x) => acc + x, 0);
+console.log(sumaTotal);
+
