@@ -49,3 +49,14 @@ const array5 = [1, 2, 3, 4, 5];
 
 const [primero, segundo, ...resto] = array5;
 
+//================NIVEL 3 =================
+
+// -------------Ejercicio 5-----------------
+
+function sumar(a, b, c) {
+  return a + b + c;
+}
+
+const array6 = [40, 50, 60];
+
+console.log(sumar(...array6));
