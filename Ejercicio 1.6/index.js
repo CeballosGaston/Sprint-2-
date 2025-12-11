@@ -45,3 +45,12 @@ for (const n of numeros2) {
   console.log(n);
 }
 
+//================NIVEL 3 =================
+
+// -------------Ejercicio 6-----------------
+
+let noms = ["Anna", "Bernat", "Clara"];
+
+for (const n of noms) {
+  console.log(noms.indexOf(n),  n);
+}
