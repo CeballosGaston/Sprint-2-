@@ -41,3 +41,11 @@ const object2 = { ...object1, song: "Purple Haze" };
 
 console.log(object1);
 console.log(object2);
+
+
+// -------------Ejercicio 4-----------------
+
+const array5 = [1, 2, 3, 4, 5];
+
+const [primero, segundo, ...resto] = array5;
+
