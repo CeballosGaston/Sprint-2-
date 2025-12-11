@@ -33,3 +33,13 @@ function verificar(input) {
 verificar("Hola")
   .then((msg) => console.log(msg))
   .catch((err) => console.log(err));
+
+  
+// -------------Ejercicio 4-----------------
+
+async function imprimirPromesa() {
+  const impresion = await promesa;
+  console.log(impresion);
+}
+
+imprimirPromesa();
