@@ -12,3 +12,8 @@ nombres.forEach((n) => {
   console.log(n);
 });
 
+// -------------Ejercicio 2-----------------
+
+for (const nom of nombres) {
+  console.log(nom);
+}
