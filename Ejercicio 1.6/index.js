@@ -34,3 +34,14 @@ let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
 for (const key in obj) {
   console.log(key, obj[key]);
 }
+
+
+// -------------Ejercicio 5-----------------
+
+let numeros2 = [1, 2, 3, 4, 5, 6];
+
+for (const n of numeros2) {
+  if (n === 5) break;
+  console.log(n);
+}
+
