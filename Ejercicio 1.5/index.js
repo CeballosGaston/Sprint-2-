@@ -30,3 +30,16 @@ const arrayNumeros3 = [13, 7, 8, 21];
 const sumaTotal = arrayNumeros3.reduce((acc, x) => acc + x, 0);
 console.log(sumaTotal);
 
+//================NIVEL 2 =================
+
+// -------------Ejercicio 5-----------------
+
+const arrayNumeros4 = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
+
+const newArray = arrayNumeros4
+  .filter((x) => x >= 10)
+  .map((x) => x * 2)
+  .reduce((acc, x) => x + acc, 0);
+
+console.log(newArray);
+
