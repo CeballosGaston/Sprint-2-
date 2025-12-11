@@ -43,3 +43,13 @@ const newArray = arrayNumeros4
 
 console.log(newArray);
 
+//================NIVEL 2 =================
+
+// -------------Ejercicio 5-----------------
+
+const arrayNumeros5 = [11, 12, 13, 14];
+
+const todos = arrayNumeros5.every((x) => x > 10);
+const alguno = arrayNumeros5.some((x) => x > 10);
+console.log(todos);
+console.log(alguno);
