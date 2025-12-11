@@ -12,3 +12,7 @@ const promesa = new Promise((resolve) => {
   }, 2000);
 });
 
+// -------------Ejercicio 2-----------------
+
+promesa.then((mensaje) => console.log(mensaje));
+
