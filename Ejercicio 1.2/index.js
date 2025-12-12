@@ -10,7 +10,7 @@ function potConduir(age) {
     console.log("Error: el valor debe ser un número");
     return;
   }
-  age > 18 ? console.log("Pots conduir") : console.log("No pots conduir");
+  age >= 18 ? console.log("Pots conduir") : console.log("No pots conduir");
 }
 
 potConduir(23);
@@ -65,20 +65,28 @@ function trobarMaxim(a, b, c) {
     isNaN(b) ||
     isNaN(c)
   ) {
-    console.log("Error: los valores deben ser un números");
+    console.log("Error: los valores deben ser números");
     return;
   }
 
-  a > b && a > c
-    ? console.log(`El número ${a} es el mayor`)
-    : b > a && b > c
-    ? console.log(`El número ${b} es el mayor`)
+  let numeroMayor = 0;
+
+  a > b && a > c || a == b && a > c || a == c && a > b
+    ? (numeroMayor = a)
+    : b > a && b > c || b == c && b > a
+    ? (numeroMayor = b)
     : c > a && c > b
-    ? console.log(`El número ${c} es el mayor`)
-    : console.log(`Los número son iguales`);
+    ? (numeroMayor = c)
+    : (numeroMayor = `Los número son iguales`);
+
+  if (numeroMayor == a || numeroMayor == b || numeroMayor == c) {
+    console.log(`El número mayor es ${numeroMayor}`);
+  } else {
+    console.log(numeroMayor);
+  }
 }
 
-trobarMaxim(2, 3, 567);
+trobarMaxim(2, 0, 2);
 
 //================NIVEL 3 =================
 
