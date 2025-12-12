@@ -49,6 +49,10 @@ const array5 = [1, 2, 3, 4, 5];
 
 const [primero, segundo, ...resto] = array5;
 
+console.log(primero);
+console.log(segundo);
+console.log(resto);
+
 //================NIVEL 3 =================
 
 // -------------Ejercicio 5-----------------
