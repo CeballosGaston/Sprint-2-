@@ -7,8 +7,13 @@
 // -------------Ejercicio 1-----------------
 
 function processar(num, callback) {
-  console.log(callback(num));
+ (callback(num));
 }
+
+const procesando = (num) => console.log(num);
+
+processar (23, procesando);
+
 
 // -------------Ejercicio 2-----------------
 
