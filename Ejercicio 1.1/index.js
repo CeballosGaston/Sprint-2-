@@ -44,9 +44,9 @@ console.log(person1.greet());
 
 // -------------Ejercicio 4----------------
 
-function printNumbers(arr) {
+const printNumbers = (arr) => {
   for (let i = 0; i < arr.length; i++) {
-    (() => console.log(arr[i]))();
+    console.log(arr[i])
   }
 }
 
